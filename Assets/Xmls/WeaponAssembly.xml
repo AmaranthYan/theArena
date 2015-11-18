@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weapon>
+	<component>
+		<body>
+			<object id="Body_MK17_01" category="Rifle">
+				<name>MK 17 SCAR-H</name>
+				<parameter>
+					<param name="Manufacturer">FNH USA</param>
+					<param name="Length">567 mm</param>
+					<param name="Weight">3.02 kg</param>
+					<param name="Rate of Fire">625 rounds/min</param>
+				</parameter>
+				<description>The SCAR is a modular rifle made by FNH for the United States Special Operations Command to satisfy the requirements of the SCAR competition. The SCAR-H, aka MK17, is designed to fire more powerful cartridge than its alternative version the SCAR-L. </description>
+			</object>
+		</body>
+		<part>
+			<object id="Barrel_LB_01">
+				<name>Standard Long Barrel</name>
+				<parameter>
+					<param name="Length">500 mm</param>
+					<param name="Weight">0.7 kg</param>
+					<param name="Effective Firing Range">800 m</param>
+				</parameter>
+				<description>The Standard Long Barrel designed for longer-range engagements.</description>
+			</object>
+			<object id="Magazine_FN FAL_01">
+				<name>20-Round Box Magazine</name>
+				<parameter>
+					<param name="Cartridge">7.62x51mm NATO</param>
+					<param name="Magazine Size">20</param>
+					<param name="Cartridge Muzzle Velocity">856 m/s</param>
+				</parameter>
+				<description>The 20-Round Box Magazine is a newly designed 20-round magazine widely equipped by the SCAR-H and the SSR which carries the 7.62x51mm NATO cartridge.</description>
+			</object>
+			<object id="Sight_Scope_01">
+				<name>3x-9x Duplex Cross-hair Sniper Rifle Scope</name>
+				<parameter>
+					<param name="Min Magnification Ratio">3x</param>
+					<param name="Max Magnification Ratio">9x</param>
+					<param name="Reticle">Duplex Cross-hair</param>
+					<param name="Night Vision">No</param>
+				</parameter>
+				<description>The 3x-9x Rifle Scope offers more flexibility regarding shooting at varying ranges, targets and light conditions and provides a variable magnification from 3x to 9x.</description>
+			</object>
+			<object id="Attach_Support_01">
+				<name>Standard Sniper Support</name>
+				<parameter>
+				</parameter>
+				<description>The Standard Sniper Support offers improved accuracy when firing from a supported position.</description>
+			</object>
+		</part>
+	</component>
+	<assembly>
+		<object id="Body_MK17_01">
+			<attachment type="Barrel">
+				<object id="Barrel_LB_01"></object>
+			</attachment>
+			<attachment type="Magazine">
+				<object id="Magazine_FN FAL_01"></object>
+			</attachment>
+			<attachment type="Sight">
+				<object id="Sight_Scope_01"></object>
+			</attachment>
+			<attachment type="Attach_Bottom">
+				<object id="Attach_Support_01"></object>
+			</attachment>
+		</object>
+		<object id="Barrel_LB_01">
+			<attachment type="Silencer">
+			</attachment>
+		</object>
+	</assembly>
+</weapon>

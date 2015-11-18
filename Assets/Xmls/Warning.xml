@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<warning>
+	<msg name="HMD Non-Attached">
+		<text lang="zh">请接入头戴式显示器</text>
+		<text lang="en">Please plug in the Head-Mounted Display</text>
+		<text lang="fr">Veuillez brancher le visiocasque</text>
+	</msg>
+	<msg name="Sensor Non-Detected">
+		<text lang="zh">请接入运动传感器</text>
+		<text lang="en">Please plug in the tracking sensor</text>
+		<text lang="fr">Veuillez brancher le capteur</text>
+	</msg>
+</warning>

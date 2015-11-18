@@ -1,0 +1,57 @@
+Initialize engine version: 5.0.1f1 (5a2e8fe35a68)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 765M        (ID=0x11e2)
+    Vendor:   NVIDIA
+    VRAM:     1985 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\VacuumShaders.TheAmazingWireframeShader.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\VacuumShaders.TheAmazingWireframeShader.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Shader 'Legacy Shaders/Bumped Specular': fallback shader 'Legacy Shaders/Specular' not found
+UnloadTime: 1.966774 ms
+System memory in use before: 15.9 MB.
+System memory in use after: 15.9 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 471.
+Total: 0.220241 ms (FindLiveObjects: 0.026514 ms CreateObjectMapping: 0.011546 ms MarkObjects: 0.172771 ms  DeleteObjects: 0.008553 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.273829 ms
+System memory in use before: 110.5 MB.
+System memory in use after: 110.1 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 717.
+Total: 0.471273 ms (FindLiveObjects: 0.044475 ms CreateObjectMapping: 0.014540 ms MarkObjects: 0.257874 ms  DeleteObjects: 0.153527 ms)
+
+Platform assembly: D:\Unity Project\the Arena\Unity5 Build\theArena_Unity5_Data\Managed\Boo.Lang.dll (this message is harmless)
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.185585 ms
+System memory in use before: 146.6 MB.
+System memory in use after: 139.2 MB.
+
+Unloading 334 unused Assets to reduce memory usage. Loaded Objects now: 4203.
+Total: 1.356942 ms (FindLiveObjects: 0.184745 ms CreateObjectMapping: 0.048324 ms MarkObjects: 0.629932 ms  DeleteObjects: 0.493511 ms)
+
+Waiting for finish

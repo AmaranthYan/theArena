@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WeaponParts\SightOVRCamera.cs">
+    <Files>
+      <File FileName="Assets\Scripts\AssemblyWorkshop\WorkshopInitializer.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\AssemblyWorkshop\Workshop.cs" Line="18" Column="7" />
+      <File FileName="Assets\Scripts\FPSPlayerController.cs" Line="176" Column="2" />
+      <File FileName="Assets\Scripts\WeaponParts\SightOVRCamera.cs" Line="39" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

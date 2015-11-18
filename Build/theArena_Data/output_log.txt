@@ -1,0 +1,131 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.4752]
+    Renderer: NVIDIA GeForce GTX 765M       
+    Vendor:   NVIDIA
+    VRAM:     1985 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\VacuumShaders.TheAmazingWireframeShader.dll (this message is harmless)
+Loading D:\Unity Project\the Arena\Build\theArena_Data\Managed\VacuumShaders.TheAmazingWireframeShader.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+desktop: 1280x800 60Hz; virtual: 1920x1200 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.136274 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 453.
+Total: 0.459299 ms (FindLiveObjects: 0.020527 ms CreateObjectMapping: 0.008980 ms MarkObjects: 0.147968 ms  DeleteObjects: 0.010263 ms)
+
+UnloadTime: 2.604408 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 701.
+Total: 0.783888 ms (FindLiveObjects: 0.030363 ms CreateObjectMapping: 0.011118 ms MarkObjects: 0.232643 ms  DeleteObjects: 0.233498 ms)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+WARNING: Shader Unsupported: 'Hidden/Dof/DX11Dof' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/Dof/DX11Dof' - Setting to default shader.
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+Platform assembly: D:\Unity Project\the Arena\Build\theArena_Data\Managed\Boo.Lang.dll (this message is harmless)
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+UnloadTime: 3.211675 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 337 unused Assets to reduce memory usage. Loaded Objects now: 4212.
+Total: 5.875528 ms (FindLiveObjects: 0.211260 ms CreateObjectMapping: 0.059443 ms MarkObjects: 0.594010 ms  DeleteObjects: 4.715732 ms)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
+HDR and MultisampleAntiAliasing (in Forward Rendering Path) is not supported. This camera will render without HDR buffers. Disable Antialiasing in the Quality settings if you want to use HDR.
+ 
+(Filename:  Line: 2484)
+
