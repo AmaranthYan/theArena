@@ -79,8 +79,8 @@ public class FPSPlayerController : MonoBehaviour {
 	//弹药反冲力计算
 	public virtual void CalculateRecoil() {
 		//recoilRotation
-		recoilPosition;
-		recoilRotation;
+		recoilPosition = Vector3.zero;
+		//recoilRotation *= Quaternion.Euler(Vector3.right);
 	}
 
 	//根据玩家状态计算Weapon位置信息+反冲力计算
