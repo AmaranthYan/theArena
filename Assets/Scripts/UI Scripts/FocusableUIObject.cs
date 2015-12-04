@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
+using System;
 using System.Collections;
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(RectTransform))]
 public class FocusableUIObject : FocusableObject {
+	[Obsolete]
 	//FoucusableUIObject必须是目标UI的父对象,以便分离碰撞体与渲染器/图形
 	[SerializeField]
 	protected Transform objectTransform;
@@ -23,9 +26,15 @@ public class FocusableUIObject : FocusableObject {
 	[SerializeField]
 	protected AudioClip UITriggeredSound;
 	
+	[HeaderAttribute("Animations")]
+	[SerializeField]
+	protected Animator focusAnimator;
+	[SerializeField]
+	protected string boolParam = "IsFocused";
+	
 	void Awake() {
 		rectTransform = (RectTransform)transform;
-		UITransform = (RectTransform)objectTransform;
+		UITransform = objectTransform != null ? (RectTransform)objectTransform : null;
 		posInitial = UITransform.position;
 		posFocused = posInitial + Vector3.forward * deltaZ;
 	}
@@ -54,6 +63,8 @@ public class FocusableUIObject : FocusableObject {
 				clip = f ? UIFocusedSound[0] : UIFocusedSound[1];
 			GetComponent<AudioSource>().PlayOneShot(clip);
 		}
+		if (focusAnimator)
+			focusAnimator.SetBool(boolParam, f);
 	}
 
 	public override void TriggerSelectEvent(bool s) {
