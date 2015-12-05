@@ -35,7 +35,7 @@ public class FocusableUIObject : FocusableObject {
 	void Awake() {
 		rectTransform = (RectTransform)transform;
 		UITransform = objectTransform != null ? (RectTransform)objectTransform : null;
-		posInitial = UITransform.position;
+		posInitial = UITransform != null ? UITransform.position : Vector3.zero;
 		posFocused = posInitial + Vector3.forward * deltaZ;
 	}
 
