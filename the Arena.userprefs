@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI Scripts\FocusableUIObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs">
     <Files>
-      <File FileName="Assets\Scripts\UI Scripts\FocusableUIObject.cs" Line="38" Column="60" />
+      <File FileName="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="63" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
