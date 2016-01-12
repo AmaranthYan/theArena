@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,6 +15,9 @@ public class ConsumableObjectCounter : MonoBehaviour {
 	private string consumeAnimatorParam = string.Empty;
 	[SerializeField]
 	private string refillAnimatorParam = string.Empty;
+
+	public UnityEvent onNoObject = new UnityEvent();
+	public UnityEvent onRefill = new UnityEvent();
 
 	private List<GameObject> indicators = new List<GameObject>();
 	private int remaining = 0;
@@ -49,18 +53,28 @@ public class ConsumableObjectCounter : MonoBehaviour {
 
 	public void Consume(int amount = 1) {
 		if (remaining <= 0) {
+			onNoObject.Invoke();
 			return;		
 		}
 		for (int i = remaining - 1; i >= Mathf.Max(remaining - amount, 0); i--) {
-			indicators[i].GetComponentInChildren<Animator>().SetTrigger(consumeAnimatorParam);
+			Animator animator = indicators[i].GetComponentInChildren<Animator>();
+			animator.SetTrigger(consumeAnimatorParam);
 		}
 		remaining = Mathf.Max(remaining - amount, 0);
+		if (remaining <= 0) {
+			onNoObject.Invoke();		
+		}
 	}
 
 	public void Refill(int amount = short.MaxValue) {
+		if (amount <= 0) {
+			return;		
+		}
 		for (int i = remaining; i < Mathf.Min(remaining + amount, indicators.Count); i++) {
-			indicators[i].GetComponentInChildren<Animator>().SetTrigger(refillAnimatorParam);
+			Animator animator = indicators[i].GetComponentInChildren<Animator>();
+			animator.SetTrigger(refillAnimatorParam);
 		}
 		remaining = Mathf.Min(remaining + amount, indicators.Count);
+		onRefill.Invoke();
 	}
 }
