@@ -9,6 +9,17 @@ public abstract class Weapon : MonoBehaviour {
 	protected float cooldown = 0.0f;
 	protected bool isTriggerPulled = false;
 
+	//HUD
+	[Header("Test")]
+	[SerializeField]
+	protected ConsumableObjectCounter ammoCounter = null;
+
+	public virtual ConsumableObjectCounter AttachAmmoCounter {
+		set {
+			ammoCounter = value;
+		}
+	}
+
 	public virtual WeaponBody Body {
 		get {
 			return body;		
@@ -142,6 +153,8 @@ public abstract class Weapon : MonoBehaviour {
 	public abstract WeaponPart EjectMagazine();
 	
 	public abstract void InsertMagazine(Magazine magazine);
+
+	public abstract int GetMagazineSize();
 
 	public abstract void FireWeapon();
 }

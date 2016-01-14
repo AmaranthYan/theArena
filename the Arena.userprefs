@@ -1,8 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs">
     <Files>
-      <File FileName="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="60" Column="73" />
+      <File FileName="Assets\Scripts\ArenaZero\ArenaInitializer.cs" Line="56" Column="20" />
+      <File FileName="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="26" Column="19" />
+      <File FileName="Assets\Scripts\Configuration.cs" Line="9" Column="31" />
+      <File FileName="Assets\Scripts\FPSPlayerController.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\Weapons\Rifle.cs" Line="76" Column="22" />
+      <File FileName="Assets\Scripts\WeaponParts\Magazine.cs" Line="40" Column="3" />
+      <File FileName="Assets\Scripts\Weapons\Weapon.cs" Line="13" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

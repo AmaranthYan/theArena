@@ -72,6 +72,15 @@ public class Rifle : Weapon {
 			return;
 		magazine.GetComponent<Rigidbody>().isKinematic = true;
 		Attach(magazine, body);
+		if (ammoCounter) 
+			ammoCounter.Refill();
+	}
+
+	public override int GetMagazineSize() {
+		Magazine magazine = (Magazine)FindPartByType("Magazine");
+		if (magazine == null)
+			return -1;
+		return magazine.MagazineSize;
 	}
 	
 	public override void FireWeapon() {
@@ -86,6 +95,8 @@ public class Rifle : Weapon {
 		Cartridge cartridge = magazine.FeedCartridge;
 		if (cartridge != null) {
 			BroadcastMessage("Fire", cartridge);
+			if (ammoCounter) 
+				ammoCounter.Consume();
 		} else {
 			BroadcastMessage("Dry");
 		}

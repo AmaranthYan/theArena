@@ -22,19 +22,10 @@ public class ConsumableObjectCounter : MonoBehaviour {
 	private List<GameObject> indicators = new List<GameObject>();
 	private int remaining = 0;
 
-	// Use this for initialization
-	void Start () {
-		Initialize(20);
+	public void Start() {
+		Initialize (20);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKey (KeyCode.X)) {
-			Consume(2);}
-		if (Input.GetKey (KeyCode.C)) {
-			Refill();}
-	}
-
 	public void Initialize(int amount) {
 		foreach (GameObject indicator in indicators) {
 			GameObject.Destroy(indicator);		
@@ -45,6 +36,7 @@ public class ConsumableObjectCounter : MonoBehaviour {
 			unit.transform.SetParent(this.transform);
 			unit.transform.localPosition = Vector3.zero;
 			unit.transform.localRotation = Quaternion.identity;
+			unit.transform.localScale = unitIndicatorPrefab.transform.lossyScale;
 			indicators.Add(unit);
 		}
 

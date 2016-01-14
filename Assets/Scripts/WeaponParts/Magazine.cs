@@ -33,6 +33,12 @@ public class Magazine : WeaponPart {
 		}
 	}
 
+	public int MagazineSize {
+		get {
+			return magazineSize;
+		}
+	}
+
 	void Start() {
 		ammunitionLoad = magazineSize;
 	}
