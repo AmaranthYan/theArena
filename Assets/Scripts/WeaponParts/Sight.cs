@@ -11,6 +11,9 @@ public class Sight : WeaponPart {
 	protected Transform eyePosition;
 	protected float currentMagnificationRatio;
 	protected float targetMagnificationRatio;
+	[SerializeField]
+	protected TextView zoomIndicator; 
+
 	[Range(1.0f, 100.0f)]
 	public float minMagnificationRatio;
 	[Range(1.0f, 100.0f)]
@@ -21,6 +24,12 @@ public class Sight : WeaponPart {
 	public Transform EyePosition {
 		get {
 			return eyePosition;
+		}
+	}
+
+	public TextView ZoomIndicator {
+		set {
+			zoomIndicator = value;
 		}
 	}
 
@@ -42,6 +51,8 @@ public class Sight : WeaponPart {
 			UpdateCurrentMagnificationRatio();
 			UpdateVerticalFoV();
 		}
+		if (zoomIndicator && zoomIndicator.gameObject.activeSelf)
+			zoomIndicator.SetText(currentMagnificationRatio.ToString("f1"));
 	}
 
 	protected void UpdateCurrentMagnificationRatio() {

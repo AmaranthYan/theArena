@@ -10,13 +10,22 @@ public abstract class Weapon : MonoBehaviour {
 	protected bool isTriggerPulled = false;
 
 	//HUD
-	[Header("Test")]
+	[Header("UI Display")]
 	[SerializeField]
 	protected ConsumableObjectCounter ammoCounter = null;
+	[SerializeField]
+	protected TextView zoomIndicator = null;
 
 	public virtual ConsumableObjectCounter AttachAmmoCounter {
 		set {
 			ammoCounter = value;
+			ammoCounter.Initialize(GetMagazineSize());
+		}
+	}
+
+	public virtual TextView AttachZoomIndicator {
+		set {
+			zoomIndicator = value;
 		}
 	}
 

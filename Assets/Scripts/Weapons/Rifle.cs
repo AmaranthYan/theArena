@@ -4,6 +4,15 @@ using System.Collections.Generic;
 public class Rifle : Weapon {
 	protected static new string[] NecessaryTypes = {"Barrel", "Magazine", "Sight"};
 
+	public override TextView AttachZoomIndicator {
+		set {
+			base.AttachZoomIndicator = value;
+			Sight sight = (Sight)FindPartByType("Sight");
+			if (sight)
+				sight.ZoomIndicator = value;
+		}
+	}
+
 	public override Transform EyePosition {
 		get {
 			Sight sight = (Sight)FindPartByType("Sight");
@@ -41,6 +50,8 @@ public class Rifle : Weapon {
 		if (sight == null)
 			return;
 		sight.EnableAimAt(OVRCamera);
+		if (zoomIndicator)
+			zoomIndicator.gameObject.SetActive(true);
 	}
 
 	public override void ZoomAim(float zoom) {
@@ -55,6 +66,8 @@ public class Rifle : Weapon {
 		if (sight == null)
 			return;
 		sight.DisableAim();
+		if (zoomIndicator)
+			zoomIndicator.gameObject.SetActive(false);
 	}
 
 	public override WeaponPart EjectMagazine() {

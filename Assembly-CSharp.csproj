@@ -1,294 +1,298 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-	<ProductVersion>10.0.20506</ProductVersion>
-	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{59888E1D-1460-9DA6-42DC-CDE8077B4693}</ProjectGuid>
-	<OutputType>Library</OutputType>
-	<AppDesignerFolder>Properties</AppDesignerFolder>
-	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
-	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-	<FileAlignment>512</FileAlignment>
-	<BaseDirectory>Assets</BaseDirectory>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{59888E1D-1460-9DA6-42DC-CDE8077B4693}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	<DebugSymbols>true</DebugSymbols>
-	<DebugType>full</DebugType>
-	<Optimize>false</Optimize>
-	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;UNITY_64;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;UNITY_64;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	<DebugType>pdbonly</DebugType>
-	<Optimize>true</Optimize>
-	<OutputPath>Temp\bin\Release\</OutputPath>
-	<DefineConstants>TRACE</DefineConstants>
-	<ErrorReport>prompt</ErrorReport>
-	<WarningLevel>4</WarningLevel>
-	<NoWarn>0169</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-	<Reference Include="System" />
-    <Reference Include="System.XML" />
-	<Reference Include="System.Core" />
-	<Reference Include="System.Xml.Linq" />
-	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
-	</Reference>
-	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
-	</Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\KunaiEditor\KunaiRotation.cs" />
-     <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
-     <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRComponent.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRMagCalibration.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRMessenger.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
-     <Compile Include="Assets\Sci-fi-Holographic-Screens\AnimatedTextures.cs" />
-     <Compile Include="Assets\Scripts\ArenaZero\ArenaInitializer.cs" />
-     <Compile Include="Assets\Scripts\ArenaZero\ArenaObject.cs" />
-     <Compile Include="Assets\Scripts\ArenaZero\ArenaTerrain.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\ComponentDetailMenu.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\EveTheBunny.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\FocusableGameObject.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\FocusableWeaponComponent.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\PowerMenu.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\ProjectionCamera.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\WeaponAssembler.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\WeaponAssemblyMenu.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\Workshop.cs" />
-     <Compile Include="Assets\Scripts\AssemblyWorkshop\WorkshopInitializer.cs" />
-     <Compile Include="Assets\Scripts\BulletHoleProjector.cs" />
-     <Compile Include="Assets\Scripts\Bullets\Cartridge.cs" />
-     <Compile Include="Assets\Scripts\Bullets\Projectile.cs" />
-     <Compile Include="Assets\Scripts\Bullets\Shell.cs" />
-     <Compile Include="Assets\Scripts\CameraFadeIn.cs" />
-     <Compile Include="Assets\Scripts\ComponentJoint.cs" />
-     <Compile Include="Assets\Scripts\Configuration.cs" />
-     <Compile Include="Assets\Scripts\DisplayLogo.cs" />
-     <Compile Include="Assets\Scripts\FPSPlayerController.cs" />
-     <Compile Include="Assets\Scripts\FocusableObject.cs" />
-     <Compile Include="Assets\Scripts\OVRCameraRayCast.cs" />
-     <Compile Include="Assets\Scripts\OVRSkybox.cs" />
-     <Compile Include="Assets\Scripts\PenetrableObject.cs" />
-     <Compile Include="Assets\Scripts\SceneInitializer.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\AboutMenu.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\FocusableHand.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\FocusableUIObject.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\HolographicMenuUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\MenuUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\OptionMenu.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\StandardMenuUI.cs" />
-     <Compile Include="Assets\Scripts\UI Scripts\Warning.cs" />
-     <Compile Include="Assets\Scripts\WeaponBodies\RifleBody.cs" />
-     <Compile Include="Assets\Scripts\WeaponBodies\WeaponBody.cs" />
-     <Compile Include="Assets\Scripts\WeaponComponent.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\Barrel.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\Magazine.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\Sight.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\SightOVRCamera.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\Support.cs" />
-     <Compile Include="Assets\Scripts\WeaponParts\WeaponPart.cs" />
-     <Compile Include="Assets\Scripts\Weapons\Rifle.cs" />
-     <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
-     <Compile Include="Assets\Test.cs" />
-     <Compile Include="Assets\UnionAssetes\Particle\ParticleScaler\ParticleScale.cs" />
-     <Compile Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Scripts\TheAmazingWireframeGenerator.cs" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective.shader" />
-     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Color.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Addative Only Wire.shader" />
-     <None Include="Assets\Resources\cginc\Wire_Vertex.cginc" />
-     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient BumpSpecular.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Cutout.shader" />
-     <None Include="Assets\Xmls\Config.xml" />
-     <None Include="Assets\Resources\cginc\Wire.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent Only Wire 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
-     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Bump.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Vertex.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred BumpSpecular T.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Addative.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient Transparent.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent NoTex.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Multiply Only Wire.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective T.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse T 2 Sided.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient Transparent 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient Transparent.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Diffuse.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Surface.cginc" />
-     <None Include="Assets\VarietyParticles\Variety Particles Readme.txt" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire.cginc" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Texture (Color Tangent).shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse T 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective T 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Specular T.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse T.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Multiply.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent NoTex 2Sided.shader" />
-     <None Include="Assets\MyAssets\Cargo asset set\Readme.txt" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient Transparent 2 Sided.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit NoTex.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
-     <None Include="Assets\Xmls\Warning.xml" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
-     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Cutout NoTex.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Bump T.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
-     <None Include="Assets\Resources\Shaders\Deferred BumpSpecular.shader" />
-     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
-     <None Include="Assets\sky5X\README.txt" />
-     <None Include="Assets\Resources\Shaders\Unlit NoTex.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent.shader" />
-     <None Include="Assets\Shaders\Crosshair.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Specular.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse C.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent 2Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient BumpSpecular T.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective BumpSpecular.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred BumpSpecular.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Texture.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective Specular.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient Transparent.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient Transparent.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
-     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
-     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Addative NoTex.shader" />
-     <None Include="Assets\Plugins\donotdelete.txt" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
-     <None Include="Assets\Resources\cginc\Wire_Functions.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Variables.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient Transparent 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Addative.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
-     <None Include="Assets\Resources\cginc\Wire_Surface.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
-     <None Include="Assets\KunaiEditor\Editor\Readme.txt" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient Transparent.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent Only Wire.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Diffuse T.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective T 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent 2Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Multiply NoTex.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient Transparent 2 Sided.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Multiply.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective T.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse T.shader" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Functions.cginc" />
-     <None Include="Assets\Xmls\WeaponAssembly.xml" />
-     <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective C.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
-     <None Include="Assets\Resources\cginc\Wire_Variables.cginc" />
-     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="VacuumShaders.TheAmazingWireframeShader">
- <HintPath>D:/Unity Project/the Arena/Assets/VacuumShaders/The Amazing Wireframe Shader/Scripts/VacuumShaders.TheAmazingWireframeShader.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\KunaiEditor\KunaiRotation.cs" />
+    <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
+    <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRComponent.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRMagCalibration.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRMessenger.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
+    <Compile Include="Assets\Sci-fi-Holographic-Screens\AnimatedTextures.cs" />
+    <Compile Include="Assets\Scripts\ArenaZero\ArenaInitializer.cs" />
+    <Compile Include="Assets\Scripts\ArenaZero\ArenaObject.cs" />
+    <Compile Include="Assets\Scripts\ArenaZero\ArenaTerrain.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\ComponentDetailMenu.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\EveTheBunny.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\FocusableGameObject.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\FocusableWeaponComponent.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\PowerMenu.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\ProjectionCamera.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\WeaponAssembler.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\WeaponAssemblyMenu.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\Workshop.cs" />
+    <Compile Include="Assets\Scripts\AssemblyWorkshop\WorkshopInitializer.cs" />
+    <Compile Include="Assets\Scripts\BulletHoleProjector.cs" />
+    <Compile Include="Assets\Scripts\Bullets\Cartridge.cs" />
+    <Compile Include="Assets\Scripts\Bullets\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Bullets\Shell.cs" />
+    <Compile Include="Assets\Scripts\CameraFadeIn.cs" />
+    <Compile Include="Assets\Scripts\ComponentJoint.cs" />
+    <Compile Include="Assets\Scripts\Configuration.cs" />
+    <Compile Include="Assets\Scripts\DisplayLogo.cs" />
+    <Compile Include="Assets\Scripts\FPSPlayerController.cs" />
+    <Compile Include="Assets\Scripts\FocusableObject.cs" />
+    <Compile Include="Assets\Scripts\OVRCameraRayCast.cs" />
+    <Compile Include="Assets\Scripts\OVRSkybox.cs" />
+    <Compile Include="Assets\Scripts\PenetrableObject.cs" />
+    <Compile Include="Assets\Scripts\SceneInitializer.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\AboutMenu.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\FocusableHand.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\FocusableUIObject.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\HolographicMenuUI.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\InGame\TextView.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\MenuUI.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\OptionMenu.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\StandardMenuUI.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\Warning.cs" />
+    <Compile Include="Assets\Scripts\WeaponBodies\RifleBody.cs" />
+    <Compile Include="Assets\Scripts\WeaponBodies\WeaponBody.cs" />
+    <Compile Include="Assets\Scripts\WeaponComponent.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\Barrel.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\Magazine.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\Sight.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\SightOVRCamera.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\Support.cs" />
+    <Compile Include="Assets\Scripts\WeaponParts\WeaponPart.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Rifle.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
+    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\UnionAssetes\Particle\ParticleScaler\ParticleScale.cs" />
+    <Compile Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Scripts\TheAmazingWireframeGenerator.cs" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective.shader" />
+    <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Color.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Addative Only Wire.shader" />
+    <None Include="Assets\Resources\cginc\Wire_Vertex.cginc" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient BumpSpecular.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Cutout.shader" />
+    <None Include="Assets\Xmls\Config.xml" />
+    <None Include="Assets\Resources\cginc\Wire.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent Only Wire 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Bump.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Vertex.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred BumpSpecular T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Addative.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient Transparent.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent NoTex.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Multiply Only Wire.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse T 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient Transparent 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient Transparent.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Diffuse.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Surface.cginc" />
+    <None Include="Assets\VarietyParticles\Variety Particles Readme.txt" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse T 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Reflective T 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Specular T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Diffuse T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Multiply.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent NoTex 2Sided.shader" />
+    <None Include="Assets\MyAssets\Cargo asset set\Readme.txt" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient Transparent 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit NoTex.shader" />
+    <None Include="Assets\Xmls\Warning.xml" />
+    <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Cutout NoTex.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Bump T.shader" />
+    <None Include="Assets\Resources\Shaders\Deferred BumpSpecular.shader" />
+    <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
+    <None Include="Assets\sky5X\README.txt" />
+    <None Include="Assets\Resources\Shaders\Unlit NoTex.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent.shader" />
+    <None Include="Assets\Shaders\Crosshair.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Specular.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse C.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\ODL Gradient.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent 2Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient BumpSpecular T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective BumpSpecular.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred BumpSpecular.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Texture.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Reflective Specular.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Gradient Transparent.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient Transparent.shader" />
+    <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
+    <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Addative NoTex.shader" />
+    <None Include="Assets\Plugins\donotdelete.txt" />
+    <None Include="Assets\Resources\cginc\Wire_Functions.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Variables.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient Transparent 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Gradient.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Addative.shader" />
+    <None Include="Assets\Resources\cginc\Wire_Surface.cginc" />
+    <None Include="Assets\KunaiEditor\Editor\Readme.txt" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Gradient Transparent.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Transparent Only Wire.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Deferred Diffuse T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective T 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Transparent 2Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Multiply NoTex.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Gradient Transparent 2 Sided.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Vertex Color\Unlit Multiply.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Diffuse T.shader" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\cginc\Wire_Functions.cginc" />
+    <None Include="Assets\Xmls\WeaponAssembly.xml" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\ODL Reflective C.shader" />
+    <None Include="Assets\Resources\cginc\Wire_Variables.cginc" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="VacuumShaders.TheAmazingWireframeShader">
+      <HintPath>D:\Unity Project\the Arena\Assets\VacuumShaders\The Amazing Wireframe Shader\Scripts\VacuumShaders.TheAmazingWireframeShader.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Editor\Data\PlaybackEngines\iossupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ShowAlphaChannel.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\GlowConeTap.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ColorCorrectionCurves.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
+    <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend %28Queue +100%29.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\GlowCompose.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\RadialBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ContrastComposite.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\FisheyeShader.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\frag_ao.cginc" />
+    <None Include="Assets\VacuumShaders\The Amazing Wireframe Shader\Shaders\Default\Unlit Texture %28Color Tangent%29.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\SSAOShader.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\GlowEffectDownsample.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\CreaseApply.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ChromaticAberrationShader.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\GlobalFog.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ColorCorrectionSelective.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\CameraMotionBlurDX11.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\BlurEffectConeTaps.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\CameraMotionBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\MotionBlurClear.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ColorCorrectionEffect.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\GrayscaleEffect.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\SepiaToneEffect.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\TwirlEffect.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\NoiseAndGrain.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\VignettingShader.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\Tonemapper.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\ColorCorrection3DLut.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\EdgeDetectNormals.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\BlendModesOverlay.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+    <None Include="Assets\Standard Assets\Image Effects %28Pro Only%29\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A331106B-F568-1C20-2A5A-754C423A31B7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{A331106B-F568-1C20-2A5A-754C423A31B7}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{C2800220-52C7-5179-AD07-D8B1E03D2AC8}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{C2800220-52C7-5179-AD07-D8B1E03D2AC8}</Project>
+      <Name>Assembly-UnityScript-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -298,5 +302,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

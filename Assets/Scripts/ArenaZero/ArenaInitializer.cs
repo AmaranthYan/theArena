@@ -56,6 +56,9 @@ public class ArenaInitializer : SceneInitializer {
 		ConsumableObjectCounter ammoCounter = inGameHUD.transform.
 			Find("Canvas/AmmoCounter").GetComponentInChildren<ConsumableObjectCounter>();
 		weapon.GetComponent<Weapon>().AttachAmmoCounter = ammoCounter;
-		ammoCounter.Initialize(weapon ? weapon.GetComponent<Weapon>().GetMagazineSize() : 0);
+
+		TextView zoomIndicator = inGameHUD.transform.
+			Find("Canvas/ZoomIndicator").GetComponent<TextView>();
+		weapon.GetComponent<Weapon>().AttachZoomIndicator = zoomIndicator;
 	}
 }

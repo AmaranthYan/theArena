@@ -95,6 +95,7 @@
      <Compile Include="Assets\Scripts\UI Scripts\FocusableUIObject.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\HolographicMenuUI.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" />
+     <Compile Include="Assets\Scripts\UI Scripts\InGame\TextView.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\MenuUI.cs" />
      <Compile Include="Assets\Scripts\UI Scripts\OptionMenu.cs" />

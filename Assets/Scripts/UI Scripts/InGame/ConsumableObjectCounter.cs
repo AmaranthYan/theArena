@@ -15,6 +15,9 @@ public class ConsumableObjectCounter : MonoBehaviour {
 	private string consumeAnimatorParam = string.Empty;
 	[SerializeField]
 	private string refillAnimatorParam = string.Empty;
+	[Header("Text")]
+	[SerializeField]
+	public TextView textView = null;
 
 	public UnityEvent onNoObject = new UnityEvent();
 	public UnityEvent onRefill = new UnityEvent();
@@ -41,6 +44,8 @@ public class ConsumableObjectCounter : MonoBehaviour {
 		}
 
 		remaining = amount;
+		if (textView) 
+			textView.SetText(remaining.ToString());
 	}
 
 	public void Consume(int amount = 1) {
@@ -53,6 +58,8 @@ public class ConsumableObjectCounter : MonoBehaviour {
 			animator.SetTrigger(consumeAnimatorParam);
 		}
 		remaining = Mathf.Max(remaining - amount, 0);
+		if (textView) 
+			textView.SetText(remaining.ToString());
 		if (remaining <= 0) {
 			onNoObject.Invoke();		
 		}
@@ -67,6 +74,8 @@ public class ConsumableObjectCounter : MonoBehaviour {
 			animator.SetTrigger(refillAnimatorParam);
 		}
 		remaining = Mathf.Min(remaining + amount, indicators.Count);
+		if (textView) 
+			textView.SetText(remaining.ToString());
 		onRefill.Invoke();
 	}
 }
