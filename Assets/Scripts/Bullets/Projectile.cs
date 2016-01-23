@@ -13,9 +13,9 @@ public class Projectile : MonoBehaviour {
 	protected float riflingTwist = Mathf.Infinity;
 	protected float substancePenetrationDepth = Mathf.Infinity;
 	protected Vector3 linearVelocity;
-	protected Vector3 angularVelocity;
+	protected float angularVelocity;
 	protected Vector3 previousPosition;
-	protected Vector3 previousRotation;
+	protected Quaternion previousRotation;
 	public LayerMask collisionLayers;
 
 	public float MuzzleVelocity {
@@ -38,15 +38,15 @@ public class Projectile : MonoBehaviour {
 
 	public Vector3 AngularVelocity {
 		get {
-			return angularVelocity;
+			return linearVelocity.normalized * angularVelocity;
 		}
 	}
 	
 	void Start () {
 		linearVelocity = transform.forward * muzzleVelocity;
-		angularVelocity = transform.forward * 360.0f * muzzleVelocity / riflingTwist;
+		angularVelocity =  360.0f * muzzleVelocity / riflingTwist;
 		previousPosition = transform.position;
-		previousRotation = transform.rotation.eulerAngles;
+		previousRotation = transform.rotation;
 	}
 
 	//Physics计算
@@ -57,7 +57,8 @@ public class Projectile : MonoBehaviour {
 		angularVelocity *= Mathf.Clamp01(1.0f - GetComponent<Rigidbody>().angularDrag * Time.fixedDeltaTime);
 		//Raycast碰撞检测防止TunnelEffect
 		Vector3 newPosition = previousPosition + linearVelocity * Time.fixedDeltaTime;
-		Vector3 newRotation = previousRotation + angularVelocity * Time.fixedDeltaTime;
+		//Aligned with linear velocity direction
+		Quaternion newRotation = Quaternion.LookRotation(linearVelocity.normalized);//previousRotation;
 		Vector3 direction = linearVelocity.normalized;
 		float distance = (newPosition - previousPosition).magnitude;
 		//正向射线判定
@@ -93,8 +94,7 @@ public class Projectile : MonoBehaviour {
 						//法线反转Projectile速度
 						linearVelocity = Vector3.Reflect(linearVelocity, forwardHit.normal);
 						//更新Rotation
-						newRotation += Quaternion.FromToRotation(direction, linearVelocity.normalized).eulerAngles;
-						angularVelocity = transform.forward * angularVelocity.magnitude;
+						newRotation = Quaternion.LookRotation(linearVelocity.normalized);
 						//动能衰减
 						ApplyKineticAttenuation(obj.ricochetKineticAttenuationRatio);
 						break;
@@ -132,9 +132,13 @@ public class Projectile : MonoBehaviour {
 		}
 		//更新Position和Rotation
 		transform.position = newPosition;
-		transform.rotation = Quaternion.Euler(newRotation);
+		transform.rotation = newRotation;
+
+		//Apply Rotation
+		transform.Rotate(Vector3.forward, angularVelocity % 360.0f, Space.Self);
+
 		previousPosition = transform.position;
-		previousRotation = transform.rotation.eulerAngles;
+		previousRotation = transform.rotation;
 	}
 
 	protected void ApplyKineticAttenuation(float attenuationRatio) {

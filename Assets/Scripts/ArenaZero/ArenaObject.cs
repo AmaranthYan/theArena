@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ArenaObject : MonoBehaviour {
 	protected const float PARTICLE_EXISTENCE_DURATION = 0.4f;
+	protected const float FLASH_EXISTENCE_DURATION = 0.15f;
 	protected const float SOUND_EXISTENCE_DURATION = 0.8f;
 	public float ricochetKineticAttenuationRatio = 0.6f;
 	public float minRicochetVelocity = 100.0f;
@@ -36,6 +37,9 @@ public class ArenaObject : MonoBehaviour {
 			e.startSpeed *= scale;
 			e.startSize *= scale;
 		}
+		Light flash = spark.GetComponentInChildren<Light>();
+		if (flash) 
+			GameObject.Destroy(flash, FLASH_EXISTENCE_DURATION);
 		GameObject.Destroy(spark, PARTICLE_EXISTENCE_DURATION);
 	}
 
