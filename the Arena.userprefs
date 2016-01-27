@@ -1,13 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bullets\Projectile.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Configuration.cs">
     <Files>
+      <File FileName="Assets\Scripts\UI Scripts\OptionMenu.cs" Line="23" Column="9" />
       <File FileName="Assets\Scripts\Bullets\Cartridge.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bullets\Projectile.cs" Line="97" Column="19" />
       <File FileName="Assets\Scripts\Weapons\Rifle.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WeaponParts\Barrel.cs" Line="20" Column="60" />
-      <File FileName="Assets\Scripts\AssemblyWorkshop\FocusableWeaponComponent.cs" Line="115" Column="1" />
-      <File FileName="d:\Unity Project\the Arena\Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="51" Column="33" />
+      <File FileName="Assets\Scripts\WeaponParts\Barrel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AssemblyWorkshop\FocusableWeaponComponent.cs" Line="1" Column="1" />
+      <File FileName="d:\Unity Project\the Arena\Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Configuration.cs" Line="18" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
