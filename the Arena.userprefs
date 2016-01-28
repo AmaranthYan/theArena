@@ -1,21 +1,20 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Configuration.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bullets\Projectile.cs">
     <Files>
-      <File FileName="Assets\Scripts\UI Scripts\OptionMenu.cs" Line="23" Column="9" />
+      <File FileName="Assets\Scripts\Bullets\HighSpeedTrailRenderer.cs" Line="4" Column="36" />
+      <File FileName="Assets\Scripts\Bullets\Projectile.cs" Line="110" Column="58" />
+      <File FileName="Assets\Scripts\UI Scripts\OptionMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Bullets\Cartridge.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Bullets\Projectile.cs" Line="97" Column="19" />
       <File FileName="Assets\Scripts\Weapons\Rifle.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WeaponParts\Barrel.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AssemblyWorkshop\FocusableWeaponComponent.cs" Line="1" Column="1" />
       <File FileName="d:\Unity Project\the Arena\Assets\Scripts\UI Scripts\InGame\ConsumableObjectCounter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Configuration.cs" Line="18" Column="42" />
+      <File FileName="Assets\Scripts\Configuration.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="D:\Unity Project\the Arena\Assets\Scripts\Bullets\Projectile.cs" line="75" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets\Scripts\Bullets\Projectile.cs" line="47" offsetX="736" offsetY="736" expression="angularVelocity" liveUpdate="False" />

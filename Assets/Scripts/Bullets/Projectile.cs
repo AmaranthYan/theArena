@@ -18,6 +18,10 @@ public class Projectile : MonoBehaviour {
 	protected Quaternion previousRotation;
 	public LayerMask collisionLayers;
 
+	[Header("Trail")]
+	[SerializeField]
+	protected HighSpeedTrailRenderer trailRenderer = null; 
+
 	public float MuzzleVelocity {
 		get {
 			return muzzleVelocity;
@@ -47,6 +51,9 @@ public class Projectile : MonoBehaviour {
 		angularVelocity =  360.0f * muzzleVelocity / riflingTwist;
 		previousPosition = transform.position;
 		previousRotation = transform.rotation;
+
+		if (trailRenderer)
+			trailRenderer.insertPoint(previousPosition, previousRotation);
 	}
 
 	//Physics计算
@@ -97,6 +104,10 @@ public class Projectile : MonoBehaviour {
 						newRotation = Quaternion.LookRotation(linearVelocity.normalized);
 						//动能衰减
 						ApplyKineticAttenuation(obj.ricochetKineticAttenuationRatio);
+
+						//在尾迹中加入反射造成的遗漏点
+						if (trailRenderer)
+							trailRenderer.insertPoint(newPosition, newRotation);
 						break;
 					} else {
 						preDist = forwardHit.distance;

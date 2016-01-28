@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\AssemblyWorkshop\WorkshopInitializer.cs" />
      <Compile Include="Assets\Scripts\BulletHoleProjector.cs" />
      <Compile Include="Assets\Scripts\Bullets\Cartridge.cs" />
+     <Compile Include="Assets\Scripts\Bullets\HighSpeedTrailRenderer.cs" />
      <Compile Include="Assets\Scripts\Bullets\Projectile.cs" />
      <Compile Include="Assets\Scripts\Bullets\Shell.cs" />
      <Compile Include="Assets\Scripts\CameraFadeIn.cs" />
