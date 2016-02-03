@@ -1,5 +1,7 @@
 Build/
 Library/
 Unity5 Build/
+*.csproj
+*.unityproj
 *.sln
-*.userpref
+*.userprefs
