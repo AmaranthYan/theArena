@@ -1,6 +1,5 @@
-Build/
 Library/
-Unity5 Build/
+Temp/
 *.csproj
 *.unityproj
 *.sln
