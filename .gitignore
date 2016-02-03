@@ -1,9 +1,6 @@
 Library/
 Temp/
-<<<<<<< HEAD
-=======
 *.csproj
 *.unityproj
->>>>>>> master
 *.sln
 *.userprefs
