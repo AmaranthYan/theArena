@@ -1,5 +1,4 @@
-Build/
 Library/
-Unity5 Build/
+Temp/
 *.sln
 *.userpref
