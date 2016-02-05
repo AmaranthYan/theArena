@@ -6,8 +6,6 @@ public class RifleBody : WeaponBody {
 	protected const float ANGULAR_EJECTION_VARIATION = 4.5f;
 	protected const float EJECTION_FORCE = 0.6f;
 	protected const float EJECTION_TORQUE = 2.0f;
-	[SerializeField]
-	protected Transform shellEjectionPoint;
 
 	protected override void EjectShell(GameObject shell) {
 		shell.transform.position = shellEjectionPoint.transform.position;

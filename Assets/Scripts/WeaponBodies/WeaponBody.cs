@@ -7,11 +7,22 @@ public class WeaponBody : WeaponComponent {
 	//射速(间隔单位s)
 	[SerializeField]
 	protected float firingRate;
+	[Header("Sounds")]
 	[SerializeField]
 	protected AudioClip ejectingSound;
 	[SerializeField]
 	protected AudioClip dryingSound;
 	protected Animator animator;
+	[Header("Weapon Recoil")]
+	[SerializeField]
+	protected Bounds recoilTranslationBounds = new Bounds(Vector3.zero, Vector3.zero);
+	[SerializeField]
+	protected Vector2 recoilXRotationRange = Vector2.zero;
+	[SerializeField]
+	protected Vector2 recoilYRotationRange = Vector2.zero;
+	[Header("Shell Ejection")]
+	[SerializeField]
+	protected Transform shellEjectionPoint;
 
 	public Transform WeaponHandle {
 		get {
@@ -23,6 +34,10 @@ public class WeaponBody : WeaponComponent {
 		get {
 			return firingRate;
 		}
+	}
+
+	public virtual void CalculateRecoil(out Vector3 recoilTranslation, out Quaternion recoilRotation) {
+		//recoilTranslation = recoilTranslationBounds.
 	}
 	
 	void Start() {
