@@ -9,6 +9,9 @@ public abstract class Weapon : MonoBehaviour {
 	protected float cooldown = 0.0f;
 	protected bool isTriggerPulled = false;
 
+	private Vector3 recoilTranslation = Vector3.zero;
+	private Quaternion recoilRotation = Quaternion.identity;
+
 	//HUD
 	[Header("UI Display")]
 	[SerializeField]
@@ -74,8 +77,12 @@ public abstract class Weapon : MonoBehaviour {
 	void Update() {
 		if (cooldown > 0.0f)
 			cooldown -= Time.deltaTime;
-		if (isTriggerPulled)
+		if (isTriggerPulled) {
 			FireWeapon();
+		};
+		//Recover from recoil
+		recoilTranslation = Vector3.Lerp(recoilTranslation, Vector3.zero, Time.deltaTime * body.RecoverSpeed);
+		recoilRotation = Quaternion.Slerp(recoilRotation, Quaternion.identity, Time.deltaTime * body.RecoverSpeed);
 	}
 
 	protected bool AddWeaponComponent(WeaponComponent component) {
@@ -149,6 +156,19 @@ public abstract class Weapon : MonoBehaviour {
 	public bool DetachAndDestroy(WeaponComponent component) {
 		bool isDetached = RemoveAndDestroyWeaponComponent(component);
 		return isDetached;
+	}
+
+	protected virtual void CalculateRecoil() {
+		Vector3 translation = Vector3.zero;
+		Quaternion rotation = Quaternion.identity;
+		body.Recoil(out translation, out rotation);
+		recoilTranslation += translation;
+		recoilRotation *= rotation;
+	}
+
+	public void ApplyRecoil(out Vector3 rTranslation, out Quaternion rRotation) {
+		rTranslation = recoilTranslation;
+		rRotation = recoilRotation;
 	}
 
 	public abstract void SightEyeAngle(ref float angle);

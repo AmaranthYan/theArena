@@ -20,6 +20,8 @@ public class WeaponBody : WeaponComponent {
 	protected Vector2 recoilXRotationRange = Vector2.zero;
 	[SerializeField]
 	protected Vector2 recoilYRotationRange = Vector2.zero;
+	[SerializeField]
+	protected float recoverSpeed;
 	[Header("Shell Ejection")]
 	[SerializeField]
 	protected Transform shellEjectionPoint;
@@ -36,8 +38,23 @@ public class WeaponBody : WeaponComponent {
 		}
 	}
 
-	public virtual void CalculateRecoil(out Vector3 recoilTranslation, out Quaternion recoilRotation) {
-		//recoilTranslation = recoilTranslationBounds.
+	public float RecoverSpeed {
+		get {
+			return recoverSpeed;
+		}
+	}
+
+	public virtual void Recoil(out Vector3 recoilTranslation, out Quaternion recoilRotation) {
+		recoilTranslation = recoilTranslationBounds.center;
+		recoilTranslation += new Vector3(
+			Random.Range(-recoilTranslationBounds.size.x / 2, recoilTranslationBounds.size.x / 2),
+			Random.Range(-recoilTranslationBounds.size.y / 2, recoilTranslationBounds.size.y / 2),
+			Random.Range(-recoilTranslationBounds.size.z / 2, recoilTranslationBounds.size.z / 2)
+		);
+		recoilRotation = Quaternion.identity;
+
+		//Local rotation to world rotation
+		recoilTranslation = transform.rotation * recoilTranslation;
 	}
 	
 	void Start() {

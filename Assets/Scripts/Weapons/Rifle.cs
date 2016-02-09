@@ -108,6 +108,7 @@ public class Rifle : Weapon {
 		Cartridge cartridge = magazine.FeedCartridge;
 		if (cartridge != null) {
 			BroadcastMessage("Fire", cartridge);
+			CalculateRecoil();
 			if (ammoCounter) 
 				ammoCounter.Consume();
 		} else {

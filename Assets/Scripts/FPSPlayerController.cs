@@ -28,8 +28,6 @@ public class FPSPlayerController : MonoBehaviour {
 	private float transitionTimer = 0.0f;
 	private int handedness = 1;
 	private float rotateScale = 1.0f;
-	private Vector3 recoilPosition = Vector3.zero;
-	private Quaternion recoilRotation = Quaternion.identity;
 	private float weaponXRotation = 0.0f;
 	private Vector3 deltaWeaponPosition;
 	private Quaternion deltaWeaponRotation;
@@ -76,16 +74,8 @@ public class FPSPlayerController : MonoBehaviour {
 		UpdateWeaponTransform();
 	}
 
-	//弹药反冲力计算
-	public virtual void CalculateRecoil() {
-		//recoilRotation
-		recoilPosition = Vector3.zero;
-		//recoilRotation *= Quaternion.Euler(Vector3.right);
-	}
-
 	//根据玩家状态计算Weapon位置信息+反冲力计算
 	public virtual void CalculateWeaponMovement() {
-		CalculateRecoil();
 		if(HaltUpdateMovement == true)
 			return;
 		Vector3 targetWeaponPosition;
@@ -164,8 +154,11 @@ public class FPSPlayerController : MonoBehaviour {
 	public virtual void UpdateWeaponTransform() {
 		weapon.transform.rotation = deltaWeaponRotation * weapon.transform.rotation;
 		weapon.transform.position += deltaWeaponPosition;
-		weapon.transform.rotation = recoilRotation * weapon.transform.rotation;
-		weapon.transform.position += recoilPosition;
+		Vector3 recoilTranslation = Vector3.zero;
+		Quaternion recoilRotation = Quaternion.identity;
+		weapon.ApplyRecoil(out recoilTranslation, out recoilRotation);
+		weapon.transform.rotation = weapon.transform.rotation * recoilRotation;
+		weapon.transform.position += recoilTranslation;
 	}
 
 	protected virtual void TransToNormal() {
