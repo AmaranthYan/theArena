@@ -45,15 +45,22 @@ public class WeaponBody : WeaponComponent {
 	}
 
 	public virtual void Recoil(out Vector3 recoilTranslation, out Quaternion recoilRotation) {
+		float x, yaw;
+		x = yaw = Random.value;		
+		float y, pitch;
+		y = pitch = Random.value;
+		float z = Random.value;
 		recoilTranslation = recoilTranslationBounds.center;
 		recoilTranslation += new Vector3(
-			Random.Range(-recoilTranslationBounds.size.x / 2, recoilTranslationBounds.size.x / 2),
-			Random.Range(-recoilTranslationBounds.size.y / 2, recoilTranslationBounds.size.y / 2),
-			Random.Range(-recoilTranslationBounds.size.z / 2, recoilTranslationBounds.size.z / 2)
+			recoilTranslationBounds.size.x * (x - 0.5f),
+			recoilTranslationBounds.size.y * (y - 0.5f),
+			recoilTranslationBounds.size.z * (z - 0.5f)
 		);
 		recoilRotation = Quaternion.identity;
+		recoilRotation *= Quaternion.AngleAxis(recoilXRotationRange.x * (1.0f - pitch) + recoilXRotationRange.y * pitch, transform.right);
+		recoilRotation *= Quaternion.AngleAxis(recoilYRotationRange.x * (1.0f - yaw) + recoilYRotationRange.y * yaw, transform.up);
 
-		//Local rotation to world rotation
+		//Local translation to world translation
 		recoilTranslation = transform.rotation * recoilTranslation;
 	}
 	

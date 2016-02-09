@@ -152,13 +152,14 @@ public class FPSPlayerController : MonoBehaviour {
 
 	//更新Weapon的Transform信息
 	public virtual void UpdateWeaponTransform() {
-		weapon.transform.rotation = deltaWeaponRotation * weapon.transform.rotation;
-		weapon.transform.position += deltaWeaponPosition;
 		Vector3 recoilTranslation = Vector3.zero;
 		Quaternion recoilRotation = Quaternion.identity;
 		weapon.ApplyRecoil(out recoilTranslation, out recoilRotation);
-		weapon.transform.rotation = weapon.transform.rotation * recoilRotation;
+		weapon.transform.rotation = recoilRotation * weapon.transform.rotation;
 		weapon.transform.position += recoilTranslation;
+
+		weapon.transform.rotation = deltaWeaponRotation * weapon.transform.rotation;
+		weapon.transform.position += deltaWeaponPosition;
 	}
 
 	protected virtual void TransToNormal() {

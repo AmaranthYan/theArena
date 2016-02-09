@@ -6,6 +6,7 @@ using System.Linq;
 [RequireComponent(typeof(Rigidbody))]
 public class Projectile : MonoBehaviour {
 	protected const float MIN_VELOCITY = 0.1f;
+	protected const float PERSISTENCE = 4.0f;
 	//对于子弹弹头而言约为0.01单位
 	public float retractDistance = 0.01f;
 	[SerializeField]
@@ -139,7 +140,8 @@ public class Projectile : MonoBehaviour {
 			}
 		}
 		if (linearVelocity.magnitude < MIN_VELOCITY) {
-			GameObject.Destroy(gameObject);		
+			trailRenderer = null;
+			GameObject.Destroy(gameObject, PERSISTENCE);		
 		}
 		//更新Position和Rotation
 		transform.position = newPosition;
