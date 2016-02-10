@@ -10,7 +10,7 @@ public abstract class Weapon : MonoBehaviour {
 	protected bool isTriggerPulled = false;
 
 	private Vector3 recoilTranslation = Vector3.zero;
-	private Quaternion recoilRotation = Quaternion.identity;
+	private Vector2 recoilRotation = Vector2.zero;
 
 	//HUD
 	[Header("UI Display")]
@@ -82,7 +82,7 @@ public abstract class Weapon : MonoBehaviour {
 		};
 		//Recover from recoil
 		recoilTranslation = Vector3.Lerp(recoilTranslation, Vector3.zero, Time.deltaTime * body.RecoverSpeed);
-		recoilRotation = Quaternion.Slerp(recoilRotation, Quaternion.identity, Time.deltaTime * body.RecoverSpeed);
+		recoilRotation = Vector2.Lerp(recoilRotation, Vector2.zero, Time.deltaTime * body.RecoverSpeed);
 	}
 
 	protected bool AddWeaponComponent(WeaponComponent component) {
@@ -160,15 +160,23 @@ public abstract class Weapon : MonoBehaviour {
 
 	protected virtual void CalculateRecoil() {
 		Vector3 translation = Vector3.zero;
-		Quaternion rotation = Quaternion.identity;
+		Vector2 rotation = Vector2.zero;
 		body.Recoil(out translation, out rotation);
 		recoilTranslation += translation;
-		recoilRotation *= rotation;
+		recoilRotation += rotation;
 	}
 
 	public void ApplyRecoil(out Vector3 rTranslation, out Quaternion rRotation) {
-		rTranslation = recoilTranslation;
-		rRotation = recoilRotation;
+		//Local translation to world translation
+		rTranslation = body.transform.rotation * recoilTranslation;
+
+		rRotation = Quaternion.identity;
+		rRotation *= Quaternion.AngleAxis(recoilRotation.x, body.transform.right);
+		rRotation *= Quaternion.AngleAxis(recoilRotation.y, body.transform.up);
+
+		//Reset to zero
+		//recoilTranslation = Vector3.zero;
+		//recoilRotation = Vector2.zero;
 	}
 
 	public abstract void SightEyeAngle(ref float angle);

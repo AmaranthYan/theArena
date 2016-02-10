@@ -140,8 +140,8 @@ public class Projectile : MonoBehaviour {
 			}
 		}
 		if (linearVelocity.magnitude < MIN_VELOCITY) {
-			trailRenderer = null;
-			GameObject.Destroy(gameObject, PERSISTENCE);		
+			GameObject.Destroy(gameObject, PERSISTENCE);
+			this.enabled = false;
 		}
 		//更新Position和Rotation
 		transform.position = newPosition;
