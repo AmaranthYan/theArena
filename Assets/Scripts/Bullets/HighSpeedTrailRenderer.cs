@@ -173,8 +173,12 @@ public class HighSpeedTrailRenderer : MonoBehaviour
 				{
 					float colorRatio = ratio * (colors.Length-1);
 					int min = (int) Mathf.Floor(colorRatio);
-					float lerp = Mathf.InverseLerp(min, min+1, colorRatio);
-					color = Color.Lerp(colors[min], colors[min+1], lerp);
+					if (min >= colors.Length - 1) {
+						color = colors[colors.Length - 1];
+					} else {
+						float lerp = Mathf.InverseLerp(min, min+1, colorRatio);
+						color = Color.Lerp(colors[min], colors[min+1], lerp);
+					}
 				}
 				meshColors[i * 2] = color;
 				meshColors[(i * 2) + 1] = color;
@@ -191,8 +195,12 @@ public class HighSpeedTrailRenderer : MonoBehaviour
 				{
 					float widthRatio = ratio * (widths.Length-1);
 					int min = (int) Mathf.Floor(widthRatio);
-					float lerp = Mathf.InverseLerp(min, min+1, widthRatio);
-					width = Mathf.Lerp(widths[min], widths[min+1], lerp);
+					if (min >= widths.Length - 1) {
+						width = widths[widths.Length - 1];
+					} else {
+						float lerp = Mathf.InverseLerp(min, min+1, widthRatio);
+						width = Mathf.Lerp(widths[min], widths[min+1], lerp);
+					}
 				}
 				trailObj.transform.position = point.position;
 				trailObj.transform.rotation = point.rotation;
