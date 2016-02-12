@@ -29,6 +29,7 @@ public class FPSPlayerController : MonoBehaviour {
 	private int handedness = 1;
 	private float rotateScale = 1.0f;
 	private float weaponXRotation = 0.0f;
+	private float weaponZRotation = 0.0f;
 	private Vector3 deltaWeaponPosition;
 	private Quaternion deltaWeaponRotation;
 
@@ -155,6 +156,11 @@ public class FPSPlayerController : MonoBehaviour {
 		weapon.transform.rotation = deltaWeaponRotation * weapon.transform.rotation;
 		weapon.transform.position += deltaWeaponPosition;
 
+		//Force Z-axis rotation，avoid spin
+		Vector3 euler = weapon.transform.localRotation.eulerAngles;
+		euler.Set (euler.x, euler.y, weaponZRotation);
+		weapon.transform.localRotation = Quaternion.Euler(euler);		
+
 		Vector3 recoilTranslation = Vector3.zero;
 		Quaternion recoilRotation = Quaternion.identity;
 		weapon.ApplyRecoil(out recoilTranslation, out recoilRotation);
@@ -167,13 +173,15 @@ public class FPSPlayerController : MonoBehaviour {
 		weapon.DisableAim();
 		currentState = PlayerState.TransToNormal;
 		transitionTimer = STATE_TRANSITION_TIME - transitionTimer;
-		weapon.PullTrigger = false;	
+		weapon.PullTrigger = false;
+		weapon.ResetRecoil();
 	}
 
 	protected virtual void TransToAiming() {
 		currentState = PlayerState.TransToAiming;
 		transitionTimer = STATE_TRANSITION_TIME - transitionTimer;
 		weapon.PullTrigger = false;
+		weapon.ResetRecoil();
 	}
 
 	protected virtual void FireWeapon() {

@@ -174,9 +174,11 @@ public abstract class Weapon : MonoBehaviour {
 		rRotation *= Quaternion.AngleAxis(recoilRotation.x, body.transform.right);
 		rRotation *= Quaternion.AngleAxis(recoilRotation.y, body.transform.up);
 
-		//Reset to zero
-		//recoilTranslation = Vector3.zero;
-		//recoilRotation = Vector2.zero;
+	}
+
+	public void ResetRecoil() {
+		recoilTranslation = Vector3.zero;
+		recoilRotation = Vector2.zero;
 	}
 
 	public abstract void SightEyeAngle(ref float angle);
