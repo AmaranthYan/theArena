@@ -46,6 +46,11 @@ public class Projectile : MonoBehaviour {
 			return linearVelocity.normalized * angularVelocity;
 		}
 	}
+
+	public void SelfDestruct() {
+		GameObject.Destroy(gameObject, PERSISTENCE);
+		this.enabled = false;
+	}
 	
 	void Start () {
 		linearVelocity = transform.forward * muzzleVelocity;
@@ -140,8 +145,7 @@ public class Projectile : MonoBehaviour {
 			}
 		}
 		if (linearVelocity.magnitude < MIN_VELOCITY) {
-			GameObject.Destroy(gameObject, PERSISTENCE);
-			this.enabled = false;
+			SelfDestruct();
 		}
 		//更新Position和Rotation
 		transform.position = newPosition;
