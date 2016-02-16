@@ -46,9 +46,9 @@ public class ArenaInitializer : SceneInitializer {
 		//Enable InGame HUD
 		Transform cameraTransform = player.GetComponentInChildren<OVRCameraController>().transform;
 		GameObject inGameHUD = GameObject.Instantiate(inGameHUDPrefab) as GameObject;
-		inGameHUD.transform.SetParent(cameraTransform);
-		inGameHUD.transform.localPosition = Vector3.zero;
-		inGameHUD.transform.localRotation = Quaternion.identity;
+		inGameHUD.transform.SetParent(cameraTransform.FindChild("CameraRight"));
+		inGameHUD.transform.localPosition = inGameHUDPrefab.transform.position;
+		inGameHUD.transform.localRotation = inGameHUDPrefab.transform.rotation;
 		inGameHUD.transform.localScale = handedness == 0 ? 
 			new Vector3(-1, 1, 1) : 
 			new Vector3(1, 1, 1);
