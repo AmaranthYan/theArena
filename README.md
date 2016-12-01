@@ -6,10 +6,10 @@ What I would like to present here is a prototype based on a thought that I had f
 I also added some other features to the project such as
   - a weapon assembly system which allows the player to assemble its own weapon step by step.  
   - advanced physics calculations for high-speed objects (bullets) based on the Unity bulit-in physics system, which can be used to prevent the tunnel effect and to make realistic simulations of ballistic penetration and ricochet.
-  
+
+## Demos
 Here is an image demo :  
 ![Demo](https://github.com/AmaranthYan/theArena/blob/master/Demo.png)
-## Video
 Here is a video demo on YouTube :  
 *poor video quality due to recording tool limits :(*  
 https://www.youtube.com/watch?v=e3V-h4KixtM&feature=youtu.be
