@@ -1,4 +1,3 @@
-Attention : README in progress...
 # theArena
 This prototype project to demonstrate my idea of VR specialized FPS games that I made during 6 months  
 ## Intro
